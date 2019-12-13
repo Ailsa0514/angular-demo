@@ -11,8 +11,9 @@
     不要声明组件 
 #  路由导入import { RouterModule, Routes } from '@angular/router';
 # 设置子路由
-   #  默认的path："" 为空
-   # 要在父级组件中设置路由的出口
-   # 带有id路由设置方式（detail/:id）
+    默认的path："" 为空
+   要在父级组件中设置路由的出口
+   带有id路由设置方式（detail/:id）
+    获取id值  this.route.snapshot.paramMap.get('id')
 # 使用方式：<a [routerLink]="['/product/detail', product.id]"></a>
-   ## 未带有明确的字段的参数的query 的方式不会显示在浏览器上面的
+   未带有明确的字段的参数的query 的方式不会显示在浏览器上面的
