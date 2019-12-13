@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// 这里需要设置的是跟路由   默认指定的是：product这个组件
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', redirectTo: '/product', pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

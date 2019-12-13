@@ -1,0 +1,14 @@
+<h1><span class="line"></span>产品列表</h1>
+
+<ul class="product-list">
+  <li *ngFor="let product of productList" class="product">
+    <!-- <a >name</a> -->
+    <a [routerLink]="['/product/detail', product.id]">
+      <img [src]="product.imageUrl" />
+      <span> ￥ {{ product.price }} </span>
+      <p>
+        {{ product.skuName }}
+      </p>
+    </a>
+  </li>
+</ul>

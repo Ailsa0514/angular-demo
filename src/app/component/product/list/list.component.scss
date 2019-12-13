@@ -1,0 +1,28 @@
+.line {
+  display: inline-block;
+  width: 0px;
+  height: 30px;
+  border-left: 5px solid #daa;
+  vertical-align: middle;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+
+  .product {
+    display: inline-block;
+    width: 45%;
+    border: orange;
+    margin: 10px;
+    box-sizing: border-box;
+
+
+    img {
+      width: 100%;
+    }
+  }
+}
