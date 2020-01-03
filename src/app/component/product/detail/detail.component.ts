@@ -15,14 +15,21 @@ export class DetailComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private productService: ProductService
-  ) {}
+  ) {
+
+    this.productService.getProduct()
+    .subscribe(
+      (data) => { this.productList = data; }, // success path
+      error => this.error = error // error path
+    );
+  }
 
   ngOnInit() {
     //获取当前路由的id值
     console.log(this.route.snapshot.paramMap.get('id'));
 
     let _id = this.route.snapshot.paramMap.get('id');
-
-
+    console.log( this.productList);
+   
   }
 }

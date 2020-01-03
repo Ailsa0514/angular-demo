@@ -5,6 +5,7 @@ import { ProductRoutingModule } from './product-routing.module';
 import { ListComponent } from './list/list.component';
 import { DetailComponent } from './detail/detail.component';
 import { ProductComponent } from './product/product.component';
+import { CartService } from 'src/app/service/cart.service';
 
 // 这里要将所有使用的模块声明，就不用再根组件中再次声明了
 
